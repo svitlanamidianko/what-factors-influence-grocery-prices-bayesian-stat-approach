@@ -5,6 +5,7 @@ One of the advantages of being a Minerva Student is the opportunity to have quic
 My model would help answer questions like: 
 - To what extent do grocery prices vary by country and store brand? 
 - Are grocery prices and the geographical distribution correlated with other cost-of-living measures?
+
 I attempt to address these questions by utilizing Bayesian Statistics and PyStan functionality available in Python. Model setup, as well as conclusions, are described below. 
 ## About dataset
 - total of 64 observations were collected during November 2020. The raw data included data from 7 countries, namely Germany, the United Kingdom, the United States of America, Morocco, Vietnam, South Korea, and Guatemala. Each country has from 2 (Guatemala, South Korea) to 22 (Germany) observations. There are 61 unique stores and 1 store with duplicate stores (located in San Francisco) in our dataset. 

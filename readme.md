@@ -10,8 +10,9 @@ I attempt to address these questions by utilizing Bayesian Statistics and PyStan
 - total of 64 observations were collected during November 2020. The raw data included data from 7 countries, namely Germany, the United Kingdom, the United States of America, Morocco, Vietnam, South Korea, and Guatemala. Each country has from 2 (Guatemala, South Korea) to 22 (Germany) observations. There are 61 unique stores and 1 store with duplicate stores (located in San Francisco) in our dataset. 
 - for the following products: apples, bananas, tomatoes, potatoes, flour, rice, milk, butter, eggs, chicken breasts
 - pre-processing: 
-  - A total of 34 observations had some missing values. The values were ‘missing at random’ (MAR), which implies that the propensity for a missing data point is related to some of the observed data, such as the type of the store (e.g. certain store did not have a lot of banana brands). It is often suggested to simply drop NAs; however, doing so would result in the deletion of 34 rows and is not suggested for such a small dataset and MAR. 
-Given the above, I decided to replace some values with the mean value of the product. For computing the mean, I differentiated between the country, product, and store type. The algorithm for such mean computation is specified in notebook PART2. As a result, I obtained the following Table 1, which was used for replacing the missing values for the respective products in respective countries & stores. This was done manually using Google Sheets.
+  - a total of 34 observations had some missing values. The values were ‘missing at random’ (MAR), which implies that the propensity for a missing data point is related to some of the observed data, such as the type of the store (e.g. certain store did not have a lot of banana brands). It is often suggested to simply drop NAs; however, doing so would result in the deletion of 34 rows and is not suggested for such a small dataset and MAR. 
+Given the above, I decided to replace some values with the mean value of the product. For computing the mean, I differentiated between the country, product, and store type.
+
 ## Modeling
 - the basic idea of the model is that each type of product has a base price, with multipliers depending on store brand and geographical location.
 - 
